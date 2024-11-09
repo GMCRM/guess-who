@@ -1,0 +1,99 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* This centers the items vertically */
+    width: 90%; /* Adjust width so the mystery card is clearly on the right */
+    max-width: 1200px; /* Maximum width to avoid stretching on large screens */
+}
+
+#character-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    width: 70%; /* Adjusted width for grid to give space for the mystery card */
+}
+
+.character-card {
+    width: 120px;
+    height: 170px; /* Increased height to give space for the name */
+    background-color: #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+    perspective: 1000px;
+    flex-direction: column;  /* Align image and name vertically */
+    text-align: center;
+}
+
+.character-card.flipped .character-img {
+    display: none;
+}
+
+.character-img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.character-name {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#mystery-card {
+    width: 250px; /* Increased width for better visibility */
+    height: 300px; /* Adjusted height */
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#mystery-card img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#mystery-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header{
+    padding-right:20px;
+    padding-left:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color:lightgray;
+    margin-right:20px;
+    border-radius: 10px;
+
+}
+header a{
+    color:gray;
+}
